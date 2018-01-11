@@ -27,7 +27,7 @@
                     <!--**********/nav***********-->
                 </div>
                 <div class="column-1">
-                    <div class="login"><a href="#" class="login-link">Вход</a></div>
+                    <div class="login"><a href="#loginModal" class="login-link">Вход</a></div>
                 </div>
             </div>
 
@@ -156,8 +156,8 @@
     </main>
 <!--    *************/Main********************-->
 
-   <!-- **************Footer**************-->
-    <footer>
+
+    <footer><!-- **************Footer**************-->
         <div class="container">
             <div class="information column-2">
                 <p class="information-uppercase">Барбершоп Бородинский</p>
@@ -186,11 +186,39 @@
             </div>
         </div>
     </footer>
-
-
+    <!-- **************/Footer**************-->
 </div>
-<div class="popup-login">
-    
+
+<!--************Pop-up*************-->
+
+<div id="loginModal" class="popup-login">
+    <div class="wrapper-popup">
+        <div class="popup-content">
+            <h1 class="header-popup">Личный кабинет</h1>
+            <p class="text-popup">Введите свой логин и пароль, чтоб войти</p>
+        </div>
+
+        <!--************Popup form*********-->
+        <form action="" class="popup-form">
+            <div class="popup-form-item popup-form-item-login">
+                <input class="popup-input popup-input-login" type="text" name="login" placeholder="Логин">
+            </div>
+            <div class="popup-form-item popup-form-item-password">
+                <input class="popup-input popup-input-password" type="text" name="password" placeholder="Пароль">
+            </div>
+            <div class="rememberme-checbox">
+                <input type="checkbox" class="popup-checkbox" id="check-10">
+                <label class="popup-label" for="check-10"><div class="popup-label_inner">Запомните меня</div></label>
+                <a href="#" class="fogot-password">Я забыл пароль!</a>
+            </div>
+            <div class="popup-btn-login">
+                <input class="btn-login" type="submit" value="Войти в личный кабинет">
+            </div>
+        </form>
+    </div>
+    <div class="close">
+        <a href="#close"><img src="assets/images/close.png" alt="close"></a>
+    </div>
 </div>
 </body>
 </html>

@@ -6,6 +6,7 @@ Adjustment settings
 3.Main
 4.Form
 5.Footer
+6. Pop-up
 */
 
 
@@ -541,4 +542,151 @@ text-align: center;
     display: block;
     line-height: 12px;
 }
+
+/************Pop-up***************/
+
+.popup-login{
+    display: none;
+    width: 460px;
+    height: 505px;
+    position: fixed;
+    margin: 0 auto;
+    background: #f8f5f2;
+    z-index: 99999;
+    -webkit-transition: opacity 800ms ease-in;
+    -moz-transition: opacity 800ms ease-in;
+    transition: opacity 800ms ease-in;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 0px 85px 0px #000000;
+}
+
+.popup-login:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.popup-login .close{
+    position: absolute;
+    top: 70px;
+    left: 535px;
+}
+
+.wrapper-popup{
+    width: 320px;
+    margin: 0 auto;
+}
+
+.header-popup{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text-popup{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.popup-content{
+    padding-top: 50px;
+}
+
+.popup-input{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #e5ddd5;
+    margin-top: 5px;
+    padding-left: 30px;
+    outline:none;
+
+}
+.popup-input-login{
+    display: block;
+}
+.popup-form-item::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+}
+.popup-form-item.popup-form-item-login::after{
+    background: url(assets/images/User-icon.png);
+    right: 102px;
+    top: 178px;
+}
+
+.popup-form-item.popup-form-item-password::after{
+    background: url(assets/images/Locked-2.png);
+    right: 102px;
+    top: 254px;
+}
+
+.popup-input::-webkit-input-placeholder {color:#000000; font-family: 'PT Sans Narrow', sans-serif; font-size: 20px;}
+.popup-input::-moz-placeholder          {color:#000000; font-family: 'PT Sans Narrow', sans-serif; font-size: 20px;}/* Firefox 19+ */
+.popup-input:-moz-placeholder           {color:#000000; font-family: 'PT Sans Narrow', sans-serif; font-size: 20px;}/* Firefox 18- */
+.popup-input:-ms-input-placeholder      {color:#000000; font-family: 'PT Sans Narrow', sans-serif; font-size: 20px;}
+
+
+.rememberme-checbox{
+    margin-top: 30px;
+}
+.rememberme-checbox .popup-checkbox{
+    display: none;
+}
+
+.rememberme-checbox .popup-label{
+    width: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rememberme-checbox .popup-label .popup-label_inner::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url(assets/images/checkbox.png) center center no-repeat;
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.rememberme-checbox .popup-checkbox:checked + .popup-label .popup-label_inner::before{
+    background: url("assets/images/checkbox-checked.png")center center no-repeat;
+}
+
+.rememberme-checbox .popup-label_inner{
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.popup-btn-login .btn-login{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #826550;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: 'PT Sans Narrow', sans-serif;
+    outline:none;
+}
+
+.fogot-password{
+    color: black;
+    float: right;
+    margin-top: 5px
+}
+
+
 

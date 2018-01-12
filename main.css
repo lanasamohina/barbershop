@@ -688,5 +688,166 @@ text-align: center;
     margin-top: 5px
 }
 
+/*************************************************PHOTO***************************************************************/
+.work-month-img img{
+    width: 100%;
+}
+.work-month{
+    height: 471px;
+    border: 1px solid #e5ddd5;
+    margin-top: 90px;
+    position:relative;
+}
+.work-month-img{
+    display: inline-block;
+}
+.work-month-text{
+    display: inline-block;
+    position: absolute;
+}
+.photo-desktop-name{
+    margin-top: 135px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+.photo-desktop-text{
+    width: 295px;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.form-header-wrapper h1{
+    font-weight: 700;
+}
+.work-month-image-label{
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background-color: #826550;
+    color: white;
+    text-transform: uppercase;
+    top: 35px;
+    right: -20px;
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+}
 
+.work-month-image-label::before{
+    content: "";
+    display: block;
+    border: 25px solid transparent;
+    border-left: 8px solid #f8f5f2;
+    position: absolute;
+    bottom: 0;
+}
+.work-month-logo{
+    position: absolute;
+}
+
+.logo-icon{
+    width: 110px;
+    height: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 40px;
+    top: 420px;
+    font-size: 16px;
+}
+
+.clients-list-item .logo-icon{
+    height: 39px;
+    margin-left: 13px;
+    margin-top: 43px;
+    margin-bottom: 20px;
+}
+
+.work-month-logo-text{
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+.haircut:before{
+    content: "";
+    background: url("assets/images/scissors-icon.png") center center no-repeat;
+    width: 55px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+}
+
+.shaving:before{
+    content: "";
+    background: url("assets/images/beard-icon.png") center center no-repeat;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+}
+
+.mustache:before{
+    content: "";
+    background: url("assets/images/mustache-icon.png") center center no-repeat;
+    width: 40px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+}
+.shaving{
+    margin-left: 165px;
+}
+.mustache{
+    margin-left: 300px;
+}
+.clients-list{
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 90px;
+    position: relative;
+}
+.clients-list-item{
+    display: inline-block;
+    width: 295px;
+    border: 1px solid #e5ddd5;
+    margin-right: 34px;
+    vertical-align: top;
+}
+.clients-list .last{
+    margin-right: 0;
+}
+.clients-list-item img{
+    width: 295px;
+}
+.clients-list-item .photo-desktop-name{
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.clients-list-item .photo-desktop-text{
+    width: 225px;
+    min-height: 85px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 18px
+}
+.wrapper-name-text{
+
+}
+
+/***********************Price**********************/
+
+.price-wrapper{
+    background-color: #353535;
+    width: 100%;
+    height: 500px;
+}
+
+.price-header{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
 

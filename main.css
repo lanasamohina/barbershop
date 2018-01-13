@@ -709,6 +709,7 @@ text-align: center;
     margin-top: 135px;
     margin-left: 40px;
     font-weight: 700;
+    font-size: 24px;
 }
 .photo-desktop-text{
     width: 295px;
@@ -762,6 +763,13 @@ text-align: center;
     margin-left: 13px;
     margin-top: 43px;
     margin-bottom: 20px;
+}
+
+.clients-list-item .logo-icon.mustache{
+    margin-left: 139px;
+    position: absolute;
+    left: 345px;
+    top: 493px;
 }
 
 .work-month-logo-text{
@@ -832,9 +840,7 @@ text-align: center;
     margin-left: 30px;
     font-size: 18px
 }
-.wrapper-name-text{
 
-}
 
 /***********************Price**********************/
 
@@ -844,10 +850,14 @@ text-align: center;
     height: 500px;
 }
 
+.price-wrapper .container{
+    padding-top: 85px;
+}
+
 .price-header{
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 40px;
 }
 

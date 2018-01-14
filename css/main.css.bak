@@ -2,12 +2,11 @@
 Adjustment settings
 0. Grid
 1.Header
-    1.1.Nav
-    1.2 Login
-2.Main
-3.Form
-4.Footer
-5. Pop-up
+2.Nav
+3.Main
+4.Form
+5.Footer
+6. Pop-up
 */
 
 
@@ -20,25 +19,11 @@ body{
 
 }
 
-h1,h2,ul,p{
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
 *{
     box-sizing: border-box;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: '';
-    display: table;
-}
 
-.clearfix:after {
-    clear: both;
-}
 /************
 *****0.Grid****
 *************/
@@ -107,6 +92,7 @@ h1,h2,ul,p{
 .nav-link{
     display: block;
     color: white;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -118,6 +104,7 @@ h1,h2,ul,p{
 .nav-link:hover{
     border-color: #826550
 }
+
 .nav-item{
     display: inline-block;
     margin: 0 30px;
@@ -127,34 +114,34 @@ h1,h2,ul,p{
     margin-right: 0;
 }
 
-/************!nav******************/
-
-/************
-*****1.2 login****
-*************/
-
 .login{
     text-align: right;
-    padding-right: 30px;
-    text-align: right;
+    padding-right: 29px;
+    position: relative;
 }
 
-.login-link {
-    background: none;
-    color: #fff;
-    border: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: 'PTSansNarrowRegular';
-    font-size: 18px;
-    padding: 0 0 0 35px;
-    background: url("../img/login.svg") center left no-repeat;
-    letter-spacing: 0.8px;
+.login-link{
+    color: white;
+    font-weight: 700;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 26px 0 26px 0;
+    display: inline-block;
+
 }
 
-.login-link:hover{
-    color: #826550;
+.login-link::before {
+    content: "";
+    background: url(../assets/images/icon-login.png) 1px no-repeat;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    opacity: 0.3;
+    position: absolute;
+    left: 40px;
+    top: 28px;
 }
 
 .header-logo{
@@ -223,6 +210,7 @@ main{
 
 .booking-form{
     margin-top: 30px;
+
 }
 
 .booking-form-item{
@@ -270,7 +258,8 @@ main{
 .header-choose-model-wrapper{
     position: relative;
     height: 24px;
-    margin-top: 77px;
+    margin-top: 77px
+;
 }
 
 .header-choose-model{
@@ -351,6 +340,7 @@ main{
 .choose-model-radiobutton-item .label .label_inner.bread-5::after{
     background: url("../assets/images/beard-5.png") center top no-repeat;
 }
+
 .choose-model-radiobutton-item .radio:checked + .label .label_inner::before{
     background: url("../assets/images/radio-checked.png") center center no-repeat;
 }
@@ -467,14 +457,13 @@ footer{
     width: 100%;
     background-color: black;
     height: 200px;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 18px;
+    color: white;
 }
 
 .information {
     display: inline-block;
     text-align: left;
-    width: 34%;
+    font-size: 16px;
     float: left;
     margin-top: 56px;
 }
@@ -483,28 +472,27 @@ footer{
     text-transform: uppercase;
     margin: 0;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 .information-adress{
-    line-height: 1.5;
+    margin-top: 24px;
+    margin-bottom: 0;
 }
+
 .information-telephone{
-    line-height: 1.5;
+    margin: 0;
 }
 .social{
     display: inline-block;
     text-align: center;
     float: left;
     margin-top: 56px;
-    width: 31%;
-
 }
 .icon{
     display: inline-block;
     height: 50px;
 }
 .header-social{
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 .vk, .facebook, .insta{
     height: 50px;
@@ -526,9 +514,8 @@ footer{
     display: inline-block;
     float: left;
     width: auto;
-    margin-left: 174px;
+    margin-left: 160px;
     margin-top: 56px;
-
 }
 .developt-by-header{
 text-align: center;
@@ -537,15 +524,16 @@ text-align: center;
 .html-academy{
     height: 50px;
     width: 161px;
-    margin-top: 15px;
-    text-transform: uppercase;
+    margin-top: 9px;
+
+
 }
 .html-academy a{
     color: white;
     text-decoration: none;
     font-weight: 700;
     border: 1px solid #3f3f3f;
-    padding: 19px 28px;
+    padding: 19px 32px;
     display: block;
     line-height: 12px;
 }
@@ -776,7 +764,7 @@ text-align: center;
     margin-left: 139px;
     position: absolute;
     left: 345px;
-    top: 486px;
+    top: 493px;
 }
 
 .work-month-logo-text{
@@ -854,71 +842,17 @@ text-align: center;
 .price-wrapper{
     background-color: #353535;
     width: 100%;
+    height: 500px;
 }
+
 .price-wrapper .container{
     padding-top: 85px;
-    padding-bottom: 90px;
 }
 
 .price-header{
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
 }
-
-/**************************Table****************************/
-.table-wrapper{
-    display: inline-block;
-    float: left;
-}
-.price-table{
-    width: 98%;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 20px;
-    border-collapse: collapse;
-
-}
-.price-table td{
-    border: 1px solid #4a4a4a;
-    padding: 16px;
-}
-.price-table-row-1{
-    color: #848484;
-    width: 10%;
-    text-align: center;
-}
-.price-table-row-2{
-    width: 35%;
-    font-family: 'PTSansNarrowBold';
-    color: #fff;
-}
-.price-table-row-3{
-    width: 25%;
-}
-.price-table-row-4{
-    width: 20%;
-}
-.clock-wrapper{
-    display: inline-block;
-    border: 1px solid #4a4a4a;
-    width: 28%;
-    float: right;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 20px;
-    padding: 35px 64px 27px 65px;
-}
-
-.clock-wrapper img{
-    margin-bottom: 17px;
-}
-.clock-text{
-    margin-top: 5px;
-    text-align: center;
-}
-.table-clock-wrapper{
-    margin-top: 55px;
-}
-
-
 

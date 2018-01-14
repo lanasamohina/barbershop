@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Barbershop | booking form</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/libs/normalize/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 <div class="wrapper">
-
     <!--**********Header*************-->
     <div class="header">
         <div class="container">
@@ -27,7 +28,9 @@
                     <!--**********/nav***********-->
                 </div>
                 <div class="column-1">
-                    <div class="login"><a href="#loginModal" class="login-link">Вход</a></div>
+                    <div class="login">
+                        <a href="#loginModal" class="login-link">Вход</a>
+                    </div>
                 </div>
             </div>
 
@@ -71,7 +74,7 @@
                     <ul class="choose-model-radiobutton-list">
                         <li class="choose-model-radiobutton-item">
                             <div class="bread-radiobutton">
-                                <input type="radio" name="beard" class="radio" id="radio-1" checked>
+                                <input type="radio" name="beard" class="radio" id="radio-1">
                                 <label class="label" for="radio-1">
                                     <div class="label_inner bread-1">aдмирал</div>
                                 </label>
@@ -117,11 +120,11 @@
                 <div class="choose-additional-services column-6">
                     <div class="choose-additional-services-row1 column-2">
                         <div class="choose-additional-services-row1-item">
-                            <input type="checkbox" class="checkbox" id="check-1" checked>
+                            <input type="checkbox" class="checkbox" id="check-1">
                             <label class="label" for="check-1"><div class="label_inner">Покрасить бороду</div></label>
                         </div>
                         <div class="choose-additional-services-row1-item">
-                            <input type="checkbox" class="checkbox" id="check-2" checked>
+                            <input type="checkbox" class="checkbox" id="check-2">
                             <label class="label" for="check-2"><div class="label_inner">Накрутить усы</div></label>
                         </div>
                     </div>
@@ -159,12 +162,12 @@
 
     <footer><!-- **************Footer**************-->
         <div class="container">
-            <div class="information column-2">
+            <div class="information">
                 <p class="information-uppercase">Барбершоп Бородинский</p>
                 <p class="information-adress">г.Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
                 <p class="information-telephone">Тел.:+7(812)555-66-66</p>
             </div>
-            <div class="social column-2">
+            <div class="social">
                 <p class="header-social">Давайте дружить!</p>
                  <div class="icon">
                      <div class="vk">
@@ -178,10 +181,10 @@
                      </div>
                  </div>
             </div>
-            <div class="developt-by column-2">
+            <div class="developt-by">
                 <p class="developt-by-header">Разработано:</p>
                 <div class="html-academy">
-                    <a href="#">HTML ACADEMY</a>
+                    <a href="#">html academy</a>
                 </div>
             </div>
         </div>

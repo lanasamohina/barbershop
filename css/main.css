@@ -98,32 +98,56 @@ h1,h2,ul,p{
 *****1.1 nav****
 *************/
 
-.nav-list{
+
+.nav__list{
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 
-.nav-link{
+.nav__link{
     display: block;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 20px;
-    padding: 26px 0 23px 0;
-    border-bottom: 3px solid transparent;
+    padding: 26px 0 26px 0;
+    position: relative;
 }
 
-.nav-link:hover{
-    border-color: #826550
+.nav__link:before,
+.nav__link:after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #826550;
+    position: absolute;
+    bottom: 0;
+    transition: width .2s ease-in-out;
 }
-.nav-item{
+
+.nav__link:before{
+    right: 50%;
+}
+
+.nav__link:after{
+    left: 50%;
+}
+
+.nav__link:hover:before,
+.nav__link:hover:after{
+    width: 50%;
+}
+
+.nav__item{
     display: inline-block;
     margin: 0 30px;
+
 }
 
-.nav-item:last-child{
+.nav__item:last-child{
     margin-right: 0;
 }
 
@@ -139,7 +163,7 @@ h1,h2,ul,p{
     text-align: right;
 }
 
-.login-link {
+.login__link {
     background: none;
     color: #fff;
     border: none;
@@ -153,17 +177,17 @@ h1,h2,ul,p{
     text-decoration: none;
 }
 
-.login-link:hover{
+.login__link:hover{
     color: #826550;
 }
 
-.header-logo{
+.logo{
     height: 295px;
     position: relative;
     background: url("../assets/images/header-logo.jpg") center center no-repeat;
 }
 
-.header-logo::before{
+.logo::before{
     content: "";
     display: block;
     border-top: 0 solid transparent;
@@ -175,7 +199,7 @@ h1,h2,ul,p{
     box-sizing: border-box;
 }
 
-.header-logo::after{
+.logo::after{
     content: "";
     display: block;
     border-top: 0 solid transparent;
